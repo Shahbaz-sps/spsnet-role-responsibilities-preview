@@ -1,2 +1,2 @@
-# spsnet-role-responsibilities-preview
-Single-page responsibility comparison for SPS role update
+# SPS Role Responsibilities Preview\n\nA clean cream-theme HTML page comparing current vs proposed responsibilities, with concise update notes.
+\n## Files\n\n- `index.html`: Visual report\n
