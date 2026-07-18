@@ -1,1 +1,215 @@
-<!doctype html>\n<html lang="en">\n  <head>\n    <meta charset="utf-8" />\n    <meta name="viewport" content="width=device-width, initial-scale=1" />\n    <title>SPS Role Responsibilities — Current vs Proposed</title>\n    <style>\n      :root {\n        --cream: #f8f1e3;\n        --cream-soft: #fff7e7;\n        --brown: #63452c;\n        --brown-dark: #47311c;\n        --ink: #2d2116;\n        --success: #2e7d32;\n        --warn: #f57c00;\n        --card: #fffdf7;\n      }\n      * { box-sizing: border-box; }\n      body {\n        margin: 0;\n        font-family: "Inter", "Segoe UI", Arial, sans-serif;\n        background: linear-gradient(180deg, var(--cream-soft), var(--cream));\n        color: var(--ink);\n      }\n      .wrap {\n        max-width: 960px;\n        margin: 30px auto;\n        padding: 0 20px;\n      }\n      .title {\n        background: #fff;\n        border: 1px solid #edd8ba;\n        border-radius: 16px;\n        padding: 24px;\n        box-shadow: 0 8px 24px rgba(90, 65, 40, 0.08);\n      }\n      h1 {\n        margin: 0 0 10px;\n        color: var(--brown-dark);\n        letter-spacing: 0.2px;\n      }\n      .sub {\n        margin: 0;\n        color: #6b523a;\n      }\n      .grid {\n        display: grid;\n        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));\n        gap: 16px;\n        margin-top: 18px;\n      }\n      .panel {\n        background: var(--card);\n        border: 1px solid #ecd0ab;\n        border-radius: 14px;\n        padding: 18px;\n      }\n      h2 {\n        margin: 0 0 12px;\n        color: var(--brown-dark);\n        font-size: 1.12rem;\n      }\n      ul { margin: 0; padding-left: 22px; }\n      li { margin: 8px 0; line-height: 1.45; }\n      .keep li::marker { color: var(--success); }\n      .add li::marker { color: var(--warn); }\n      .note {\n        margin-top: 14px;\n        padding: 12px;\n        border: 1px dashed #e2c48f;\n        border-radius: 12px;\n        background: #fff4de;\n        color: #5b4228;\n      }\n      .grid-2 {\n        display: grid;\n        grid-template-columns: 1fr;\n        gap: 12px;\n      }\n      .pair {\n        display: grid;\n        gap: 8px;\n      }\n      .pair .bad {\n        background: #fff0ea;\n        border-color: #f6cab6;\n      }\n      .pair .good {\n        background: #eef8f0;\n        border-color: #c9e7cc;\n      }\n      .pair h3 {\n        margin: 0 0 8px;\n        font-size: 14px;\n      }\n      .foot {\n        margin: 22px 0;\n        color: #6a4d31;\n        font-size: 13px;\n      }\n      .badge {\n        margin-top: 12px;\n        font-size: 12px;\n        color: #2f4b2b;\n      }\n      .pill {\n        display: inline-block;\n        padding: 3px 8px;\n        border-radius: 999px;\n        background: #d9ead3;\n        border: 1px solid #bad8b0;\n      }\n      @media (max-width: 700px) {\n        .title { padding: 18px; }\n        .panel { padding: 14px; }\n      }\n    </style>\n  </head>\n  <body>\n    <main class="wrap">\n      <section class="title">\n        <h1>Role Responsibilities Review</h1>\n        <p class="sub">SPS profile update recommendation based on the latest 6 months of work activity (2026-01-17 to 2026-07-17).</p>\n        <p class="sub">Primary role source: <strong>AI Developer</strong> (role_id: <strong>783</strong>).</p>\n      </section>\n\n      <section class="grid">\n        <article class="panel">\n          <h2>Current SPS Responsibilities (from API)</h2>\n          <ul>\n            <li>Design and develop AI models and algorithms.</li>\n            <li>Collaborate with cross-functional teams to define AI project requirements.</li>\n            <li>Implement machine learning frameworks and libraries.</li>\n            <li>Optimize AI models for performance and scalability.</li>\n            <li>Conduct data preprocessing and feature engineering.</li>\n            <li>Monitor and evaluate the performance of AI systems.</li>\n            <li>Stay updated with the latest advancements in AI and machine learning.</li>\n          </ul>\n          <div class="badge">Fetched from /api-emp-role-details/?role_id=783</div>\n        </article>\n\n        <article class="panel">\n          <h2>Proposed Updated Responsibilities</h2>\n          <ul class="add">\n            <li><strong>Design, build, and ship production-ready AI automation workflows</strong> (agentic copilots, proposal assistants, and task-routing automations).</li>\n            <li><strong>Own integration work</strong> for AI systems with APIs, GitHub-based repositories, and supporting services.</li>\n            <li><strong>Drive practical MLOps tasks</strong>: deployment packaging, monitoring, and iterative improvement after release.</li>\n            <li><strong>Translate technical requirements into end-to-end implementation plans</strong> across AI models, UI, and platform services.</li>\n            <li><strong>Conduct model validation + reliability checks</strong> including test evidence, error handling, and post-deploy support.</li>\n            <li><strong>Contribute reusable AI coding patterns</strong> and reusable templates to help teams adopt AI tooling faster.</li>\n            <li><strong>Document implementation learnings</strong> in concise handover notes for support and operations.</li>\n          </ul>\n          <div class="badge">Suggested by your 6-month activity signals (AI/ML, GitHub, deployment, automation-related communication).</div>\n        </article>\n      </section>\n\n      <section class="grid">\n        <article class="panel keep">\n          <h2>Keep, Remove, and Add (Diff)</h2>\n          <div class="grid-2">\n            <div class="pair">\n              <h3>Keep as-is</h3>\n              <ul>\n                <li>AI model development + evaluation loop.</li>\n                <li>Cross-functional collaboration for AI requirements.</li>\n                <li>Data preprocessing / feature engineering foundation.</li>\n              </ul>\n            </div>\n            <div class="pair bad">\n              <h3>De-emphasize / revise</h3>\n              <ul>\n                <li>General “AI advancement tracking” without delivery context should be replaced by measurable delivery-oriented outcomes.</li>\n                <li>Replace generic support wording with evidence-backed support for deployed AI workflows.</li>\n              </ul>\n            </div>\n            <div class="pair good">\n              <h3>Add</h3>\n              <ul>\n                <li>Production AI automation deployment and monitoring responsibilities.</li>\n                <li>Repository-integrated implementation ownership (GitHub + release cycles).</li>\n                <li>Operational reliability and support loops tied to real use cases.</li>\n              </ul>\n            </div>\n          </div>\n        </article>\n\n        <article class="panel">\n          <h2>Why this update is warranted</h2>\n          <ul>\n            <li>Recent work includes repeated AI/ML and automation-themed communication and coordination items.</li>\n            <li>There is strong GitHub/tooling and deployment-related activity in technical messages.</li>\n            <li>Current profile already identifies AI focus, so update should deepen operational deliverables instead of broadening into non-core BMS duties.</li>\n          </ul>\n          <div class="note">\n            <strong>Important:</strong> You also have a separate BMS role record (role_id=215) that contains different responsibilities. Keep the active primary role aligned to your AI-focused current scope, and ensure SPS details are updated consistently with that role.\n          </div>\n        </article>\n      </section>\n\n      <section class="title" style="margin-top: 18px;">\n        <h2 style="margin:0 0 8px;">Suggested update text (for direct paste)</h2>\n        <p style="margin:0 0 12px;">If you want, you can paste this directly into the Responsibilities field:</p>\n        <div style="background:#fff; border:1px solid #efdab8; border-radius:10px; padding:12px;">\n          - Own end-to-end AI solution delivery from requirement discovery through deployment and post-release monitoring.\n          - Design and implement production-ready AI/agentic workflows integrated with APIs, GitHub, and platform services.\n          - Run reliability checks, performance validation, and troubleshooting loops to keep AI systems stable.\n          - Convert technical and business requirements into reusable AI patterns that improve team delivery speed.\n          - Maintain clear documentation for operational handover and support.\n        </div>\n      </section>\n\n      <p class="foot">Generated at 2026-07-17 (UTC anchor) from Composio-based evidence checks and SPS role APIs.</p>\n    </main>\n  </body>\n</html>\n
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SPS Role Responsibilities — Current vs Proposed</title>
+    <style>
+      :root {
+        --cream: #f8f1e3;
+        --cream-soft: #fff7e7;
+        --brown: #63452c;
+        --brown-dark: #47311c;
+        --ink: #2d2116;
+        --success: #2e7d32;
+        --warn: #f57c00;
+        --card: #fffdf7;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Inter", "Segoe UI", Arial, sans-serif;
+        background: linear-gradient(180deg, var(--cream-soft), var(--cream));
+        color: var(--ink);
+      }
+      .wrap {
+        max-width: 960px;
+        margin: 30px auto;
+        padding: 0 20px;
+      }
+      .title {
+        background: #fff;
+        border: 1px solid #edd8ba;
+        border-radius: 16px;
+        padding: 24px;
+        box-shadow: 0 8px 24px rgba(90, 65, 40, 0.08);
+      }
+      h1 {
+        margin: 0 0 10px;
+        color: var(--brown-dark);
+        letter-spacing: 0.2px;
+      }
+      .sub {
+        margin: 0;
+        color: #6b523a;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 16px;
+        margin-top: 18px;
+      }
+      .panel {
+        background: var(--card);
+        border: 1px solid #ecd0ab;
+        border-radius: 14px;
+        padding: 18px;
+      }
+      h2 {
+        margin: 0 0 12px;
+        color: var(--brown-dark);
+        font-size: 1.12rem;
+      }
+      ul { margin: 0; padding-left: 22px; }
+      li { margin: 8px 0; line-height: 1.45; }
+      .keep li::marker { color: var(--success); }
+      .add li::marker { color: var(--warn); }
+      .note {
+        margin-top: 14px;
+        padding: 12px;
+        border: 1px dashed #e2c48f;
+        border-radius: 12px;
+        background: #fff4de;
+        color: #5b4228;
+      }
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      .pair {
+        display: grid;
+        gap: 8px;
+      }
+      .pair .bad {
+        background: #fff0ea;
+        border-color: #f6cab6;
+      }
+      .pair .good {
+        background: #eef8f0;
+        border-color: #c9e7cc;
+      }
+      .pair h3 {
+        margin: 0 0 8px;
+        font-size: 14px;
+      }
+      .foot {
+        margin: 22px 0;
+        color: #6a4d31;
+        font-size: 13px;
+      }
+      .badge {
+        margin-top: 12px;
+        font-size: 12px;
+        color: #2f4b2b;
+      }
+      .pill {
+        display: inline-block;
+        padding: 3px 8px;
+        border-radius: 999px;
+        background: #d9ead3;
+        border: 1px solid #bad8b0;
+      }
+      @media (max-width: 700px) {
+        .title { padding: 18px; }
+        .panel { padding: 14px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="title">
+        <h1>Role Responsibilities Review</h1>
+        <p class="sub">SPS profile update recommendation based on the latest 6 months of work activity (2026-01-17 to 2026-07-17).</p>
+        <p class="sub">Primary role source: <strong>AI Developer</strong> (role_id: <strong>783</strong>).</p>
+      </section>
+
+      <section class="grid">
+        <article class="panel">
+          <h2>Current SPS Responsibilities (from API)</h2>
+          <ul>
+            <li>Design and develop AI models and algorithms.</li>
+            <li>Collaborate with cross-functional teams to define AI project requirements.</li>
+            <li>Implement machine learning frameworks and libraries.</li>
+            <li>Optimize AI models for performance and scalability.</li>
+            <li>Conduct data preprocessing and feature engineering.</li>
+            <li>Monitor and evaluate the performance of AI systems.</li>
+            <li>Stay updated with the latest advancements in AI and machine learning.</li>
+          </ul>
+          <div class="badge">Fetched from /api-emp-role-details/?role_id=783</div>
+        </article>
+
+        <article class="panel">
+          <h2>Proposed Updated Responsibilities</h2>
+          <ul class="add">
+            <li><strong>Design, build, and ship production-ready AI automation workflows</strong> (agentic copilots, proposal assistants, and task-routing automations).</li>
+            <li><strong>Own integration work</strong> for AI systems with APIs, GitHub-based repositories, and supporting services.</li>
+            <li><strong>Drive practical MLOps tasks</strong>: deployment packaging, monitoring, and iterative improvement after release.</li>
+            <li><strong>Translate technical requirements into end-to-end implementation plans</strong> across AI models, UI, and platform services.</li>
+            <li><strong>Conduct model validation + reliability checks</strong> including test evidence, error handling, and post-deploy support.</li>
+            <li><strong>Contribute reusable AI coding patterns</strong> and reusable templates to help teams adopt AI tooling faster.</li>
+            <li><strong>Document implementation learnings</strong> in concise handover notes for support and operations.</li>
+          </ul>
+          <div class="badge">Suggested by your 6-month activity signals (AI/ML, GitHub, deployment, automation-related communication).</div>
+        </article>
+      </section>
+
+      <section class="grid">
+        <article class="panel keep">
+          <h2>Keep, Remove, and Add (Diff)</h2>
+          <div class="grid-2">
+            <div class="pair">
+              <h3>Keep as-is</h3>
+              <ul>
+                <li>AI model development + evaluation loop.</li>
+                <li>Cross-functional collaboration for AI requirements.</li>
+                <li>Data preprocessing / feature engineering foundation.</li>
+              </ul>
+            </div>
+            <div class="pair bad">
+              <h3>De-emphasize / revise</h3>
+              <ul>
+                <li>General “AI advancement tracking” without delivery context should be replaced by measurable delivery-oriented outcomes.</li>
+                <li>Replace generic support wording with evidence-backed support for deployed AI workflows.</li>
+              </ul>
+            </div>
+            <div class="pair good">
+              <h3>Add</h3>
+              <ul>
+                <li>Production AI automation deployment and monitoring responsibilities.</li>
+                <li>Repository-integrated implementation ownership (GitHub + release cycles).</li>
+                <li>Operational reliability and support loops tied to real use cases.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel">
+          <h2>Why this update is warranted</h2>
+          <ul>
+            <li>Recent work includes repeated AI/ML and automation-themed communication and coordination items.</li>
+            <li>There is strong GitHub/tooling and deployment-related activity in technical messages.</li>
+            <li>Current profile already identifies AI focus, so update should deepen operational deliverables instead of broadening into non-core BMS duties.</li>
+          </ul>
+          <div class="note">
+            <strong>Important:</strong> You also have a separate BMS role record (role_id=215) that contains different responsibilities. Keep the active primary role aligned to your AI-focused current scope, and ensure SPS details are updated consistently with that role.
+          </div>
+        </article>
+      </section>
+
+      <section class="title" style="margin-top: 18px;">
+        <h2 style="margin:0 0 8px;">Suggested update text (for direct paste)</h2>
+        <p style="margin:0 0 12px;">If you want, you can paste this directly into the Responsibilities field:</p>
+        <div style="background:#fff; border:1px solid #efdab8; border-radius:10px; padding:12px;">
+          - Own end-to-end AI solution delivery from requirement discovery through deployment and post-release monitoring.
+          - Design and implement production-ready AI/agentic workflows integrated with APIs, GitHub, and platform services.
+          - Run reliability checks, performance validation, and troubleshooting loops to keep AI systems stable.
+          - Convert technical and business requirements into reusable AI patterns that improve team delivery speed.
+          - Maintain clear documentation for operational handover and support.
+        </div>
+      </section>
+
+      <p class="foot">Generated at 2026-07-17 (UTC anchor) from Composio-based evidence checks and SPS role APIs.</p>
+    </main>
+  </body>
+</html>
